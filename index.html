@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <p>This is a paragraph.</p>
+    <style>
+      body {
+        background-image: url("groundpicture.jpg");
+        background-size: cover;
+      }
+      .tic-tac-toe-box {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        padding: 50px;
+        margin: 20px;
+      }
+      .game-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .tic-tac-toe-row {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+
+    <div class="game-section">
+      <div class="tic-tac-toe-row">
+        <div class="tic-tac-toe-box" onclick="myFunction()"></div>
+        <div class="tic-tac-toe-box"></div>
+        <div class="tic-tac-toe-box"></div>
+      </div>
+      <div class="tic-tac-toe-row">
+        <div class="tic-tac-toe-box"></div>
+        <div class="tic-tac-toe-box"></div>
+        <div class="tic-tac-toe-box"></div>
+      </div>
+      <div class="tic-tac-toe-row">
+        <div class="tic-tac-toe-box"></div>
+        <div class="tic-tac-toe-box"></div>
+        <div class="tic-tac-toe-box"></div>
+      </div>
+    </div>
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script>
+
+    <button type="button">Start game</button>
+  </body>
+</html>
