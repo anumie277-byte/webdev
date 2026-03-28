@@ -1,33 +1,48 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tictactoe.css" />
-    <script src="tictactoe.js"></script>
   </head>
   <body>
-    <h1>Tic Tac Toe</h1>
-    <p>This is a paragraph.</p>
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1 class="title">Tic Tac Toe</h1>
+          <p class="subtitle">A simple, responsive two-player game.</p>
+        </div>
+        <div class="controls">
+          <button class="btn btn-ghost" id="resetBtn">Reset</button>
+          <button class="btn btn-primary" id="newGameBtn">New Game</button>
+        </div>
+      </div>
 
-    <div class="game-section">
-      <div class="tic-tac-toe-row">
-        <div class="tic-tac-toe-box" onclick="myFunction()"></div>
-        <div class="tic-tac-toe-box"></div>
-        <div class="tic-tac-toe-box"></div>
+      <div class="board-wrap">
+        <div class="board" role="grid" aria-label="Tic tac toe board">
+          <div class="tic-tac-toe-box empty" data-index="0"></div>
+          <div class="tic-tac-toe-box empty" data-index="1"></div>
+          <div class="tic-tac-toe-box empty" data-index="2"></div>
+          <div class="tic-tac-toe-box empty" data-index="3"></div>
+          <div class="tic-tac-toe-box empty" data-index="4"></div>
+          <div class="tic-tac-toe-box empty" data-index="5"></div>
+          <div class="tic-tac-toe-box empty" data-index="6"></div>
+          <div class="tic-tac-toe-box empty" data-index="7"></div>
+          <div class="tic-tac-toe-box empty" data-index="8"></div>
+        </div>
+
+        <div class="status-bar">
+          <div class="status" id="status">Click a square to start — X goes first.</div>
+          <div class="meta" id="meta"></div>
+        </div>
       </div>
-      <div class="tic-tac-toe-row">
-        <div class="tic-tac-toe-box"></div>
-        <div class="tic-tac-toe-box"></div>
-        <div class="tic-tac-toe-box"></div>
-      </div>
-      <div class="tic-tac-toe-row">
-        <div class="tic-tac-toe-box"></div>
-        <div class="tic-tac-toe-box"></div>
-        <div class="tic-tac-toe-box"></div>
-      </div>
+
+      <footer style="margin-top:18px; text-align:center; color:var(--muted); font-size:0.85rem">Built with ❤️ — refresh to reload</footer>
     </div>
-    <p id="demo"></p>
 
-    <button type="button">Start game</button>
+    <script src="tictactoe.js"></script>
   </body>
 </html>
