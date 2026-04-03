@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+}

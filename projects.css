@@ -1,0 +1,18 @@
+.textehehehhe {
+  text-align: center;
+  filter: blur(2px);
+  font-size: xx-large;
+  background-color: red;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes myAnimation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
