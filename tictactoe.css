@@ -11,9 +11,6 @@
 }
 html,
 body {
-  height: 100%;
-}
-body {
   margin: 0;
   font-family:
     "Inter",
@@ -25,18 +22,16 @@ body {
     Arial;
   background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
   color: #111827;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 32px;
+  height: 100%;
 }
 
-.header {
+header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
 }
+
 .title {
   margin: 0;
   font-size: 1.25rem;
@@ -44,11 +39,16 @@ body {
   font-family: "Press Start 2P", monospace;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
 }
 .subtitle {
   color: var(--muted);
   margin: 4px 0 0 0;
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .board-wrap {
@@ -118,7 +118,7 @@ body {
 .status-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
   width: 100%;
   margin-top: 12px;
@@ -128,6 +128,8 @@ body {
 }
 .controls {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 .btn {
