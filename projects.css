@@ -1,18 +1,69 @@
 .textehehehhe {
   text-align: center;
-  filter: blur(2px);
+  /* filter: blur(2px); */
   font-size: xx-large;
-  background-color: red;
-  animation-name: myAnimation;
+  /* background-color: red; */
+  animation-name: myAnimation2;
   animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-family: "Press Start 2P", cursive;
 }
 
 /* The animation code */
-@keyframes myAnimation {
+/* @keyframes myAnimation {
   from {
     background-color: red;
   }
   to {
     background-color: yellow;
   }
+} */
+
+/* The animation code */
+@keyframes myAnimation2 {
+  0% {
+    font-size: small;
+    background-color: red;
+  }
+  50% {
+    font-size: xx-large;
+    background-color: yellow;
+  }
+  100% {
+    font-size: small;
+    background-color: red;
+  }
+}
+/* @keyframes myAnimation3 {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+  50% {
+    background-color: blue;
+  }
+}
+
+@keyframes myAnimation4 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
