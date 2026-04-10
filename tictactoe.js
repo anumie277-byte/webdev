@@ -83,4 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
   boxes.forEach((box) => box.addEventListener("click", handleBoxClick));
   resetBtn.addEventListener("click", resetGame);
   newGameBtn.addEventListener("click", resetGame);
+
+  const statusEl = document.getElementById("status");
+  const resetBtn = document.getElementById("resetBtn");
+  const newGameBtn = document.getElementById("newGameBtn");
+  const boxes = document.querySelectorAll(".tic-tac-toe-box");
 });
