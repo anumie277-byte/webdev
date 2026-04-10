@@ -84,8 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
   resetBtn.addEventListener("click", resetGame);
   newGameBtn.addEventListener("click", resetGame);
 
-  const statusEl = document.getElementById("status");
-  const resetBtn = document.getElementById("resetBtn");
-  const newGameBtn = document.getElementById("newGameBtn");
-  const boxes = document.querySelectorAll(".tic-tac-toe-box");
+  // const statusEl = document.getElementById("status");
+  // const resetBtn = document.getElementById("resetBtn");
+  // const newGameBtn = document.getElementById("newGameBtn");
+  // const boxes = document.querySelectorAll(".tic-tac-toe-box");
+
+  // This tells every square on the board to listen for a click
+  boxes.forEach((box) => box.addEventListener("click", handleBoxClick));
+
+  // This tells the Reset and New Game buttons to run the reset function
+  resetBtn.addEventListener("click", resetGame);
+  newGameBtn.addEventListener("click", resetGame);
 });
