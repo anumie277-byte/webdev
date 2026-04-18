@@ -15,9 +15,12 @@ body {
 .homepagebutton {
   width: 100%;
   justify-content: center;
+  display: flex;
+    height: 80vh;
+    align-items: center;
 }
 
 button {
   width: max-content;
-  height: auto;
-}
+    height: max-content;
+  }
