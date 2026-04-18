@@ -11,3 +11,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.homepagebutton {
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  width: max-content;
+  height: auto;
+}
