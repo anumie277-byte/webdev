@@ -1,3 +1,5 @@
+const runawaybutton = document.getElementById("demo");
+
 document.getElementById("demo").onmouseover = function () {
   mouseOver();
 };
@@ -7,6 +9,8 @@ document.getElementById("demo").onmouseout = function () {
 
 function mouseOver() {
   document.getElementById("demo").innerHTML = "No touchy";
+  runawaybutton.style.left = Math.floor(Math.random() * 800) + "px";
+  runawaybutton.style.top = Math.floor(Math.random() * 800) + "px";
 }
 
 function mouseOut() {

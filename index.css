@@ -4,8 +4,7 @@ body {
   align-items: center;
 }
 .homepagebutton {
-  display: flex;
-  justify-content: center;
+  position: absolute;
   height: 80vh;
   align-items: center;
 }
